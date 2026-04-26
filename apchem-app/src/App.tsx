@@ -72,7 +72,7 @@ export default function App() {
         <div className="header-inner">
           <div className="logo">
             <span className="logo-icon">⚗️</span>
-            <span className="logo-text">ChemMentor<span className="logo-ap">AP</span></span>
+            <span className="logo-text">p-Chemistry4u<span className="logo-ap">AP</span></span>
           </div>
           <nav className="tabs">
             {(["chat", "questions", "progress"] as Tab[]).map(tab => (

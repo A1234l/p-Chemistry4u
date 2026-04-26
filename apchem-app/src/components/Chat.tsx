@@ -29,7 +29,7 @@ function buildSystemPrompt(topicStats: TopicStats, weakTopics: string[]) {
     ? `The student is currently STRUGGLING most with: ${weakTopics.join(", ")}. Proactively suggest or generate questions on these topics when appropriate.`
     : "No weak topics identified yet.";
 
-  return `You are ChemMentorAP, an expert AP Chemistry tutor for high school students. You are encouraging, precise, and pedagogically excellent.
+  return `You are ChemMentor, an expert AP Chemistry tutor for high school students. You are encouraging, precise, and pedagogically excellent.
 
 Your primary capabilities:
 1. Answer any AP Chemistry question conversationally.
@@ -87,7 +87,7 @@ export default function Chat({ onSaveQuestion, topicStats, weakTopics }: Props) 
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hey! I'm ChemMentorAP 👋 I'm here to help you ace AP Chemistry. Ask me anything, or say something like **\"Give me an MC question on stoichiometry\"** or **\"Generate an FRQ on equilibrium\"** to get practice questions you can save and study!",
+      content: "Hey! I'm ChemMentor 👋 I'm here to help you ace AP Chemistry. Ask me anything, or say something like **\"Give me an MC question on stoichiometry\"** or **\"Generate an FRQ on equilibrium\"** to get practice questions you can save and study!",
     },
   ]);
   const [input, setInput] = useState("");
